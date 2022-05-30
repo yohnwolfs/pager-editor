@@ -1,0 +1,19 @@
+@import '../../variable.less';
+
+/** 编辑器视窗 */
+.editorViewPort {
+  background: @viewport-bg;
+  flex: 1;
+  overflow: hidden;
+  &:focus-visible {
+    outline: none;
+  }
+  .editorBoard {
+    background: #fff;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 30px;
+  }
+}

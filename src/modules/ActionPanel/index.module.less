@@ -1,0 +1,23 @@
+@import '../../variable.less';
+
+.actionPanel {
+  .header {
+    border-bottom: 1px solid @border-color;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    :global(.anticon) {
+      cursor: pointer;
+      padding: 8px 8px 8px 8px;
+      font-size: 18px;
+    }
+  }
+  .content {
+    padding: 16px;
+  }
+  .actionItem {
+    outline: 0;
+  }
+}

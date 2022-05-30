@@ -1,0 +1,61 @@
+.board {
+  outline: none;
+  :global {
+    .react-resizable-handle {
+      visibility: hidden;
+    }
+    .react-grid-item:hover {
+      & > .react-resizable-handle {
+        visibility: visible;
+      }
+    }
+  }
+}
+.editorGridItem {
+  display: inline-flex;
+  justify-content: center;
+  cursor: move;
+  &:hover {
+    outline: 1px dashed #aaa;
+  }
+  :global {
+    span.react-resizable-handle {
+      visibility: hidden;
+    }
+  }
+}
+.editorGridItemSelected {
+  outline: 1px dashed #aaa;
+  z-index: 3;
+  :global {
+    span.react-resizable-handle {
+      visibility: visible;
+    }
+    .react-grid-layout span.react-resizable-handle {
+      visibility: hidden;
+    }
+  }
+}
+.editorAbsItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.boardEditor {
+  position: absolute;
+  top: -40px;
+  height: 30px;
+  border-radius: 6px;
+  width: 100%;
+  left: 0;
+  background: rgba(100, 100, 100, 0.1);
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  color: rgb(153, 153, 153);
+  justify-content: space-between;
+  &:hover {
+    color: #0099fe;
+    background: rgba(0, 153, 254, 0.1);
+  }
+}

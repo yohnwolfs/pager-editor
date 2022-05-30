@@ -1,0 +1,28 @@
+.container {
+  .editorGridItem {
+    display: inline-flex;
+    justify-content: center;
+    overflow: hidden;
+    cursor: move;
+    &:hover {
+      outline: 1px dashed #aaa;
+    }
+    :global {
+      span.react-resizable-handle {
+        visibility: hidden;
+      }
+    }
+  }
+  .editorGridItemSelected {
+    outline: 1px dashed #aaa;
+    z-index: 3;
+    :global(span.react-resizable-handle) {
+      visibility: visible;
+    }
+  }
+  .editorAbsItem {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

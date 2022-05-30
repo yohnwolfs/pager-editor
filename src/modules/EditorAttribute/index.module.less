@@ -1,0 +1,33 @@
+@import '../../variable.less';
+
+/** 属性面板 */
+.editorAttrPanel {
+  width: 300px;
+  padding: 0 16px 8px 16px;
+  border-left: 1px solid @border-color;
+  overflow: auto;
+  .toolBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .alignAttr {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    height: 40px;
+    :global(.anticon) {
+      margin-right: 12px;
+      cursor: pointer;
+    }
+  }
+  .attrDisable {
+    color: #ddd;
+  }
+  :global {
+    .ant-btn[disabled] {
+      color: #ddd;
+      border-color: #efefef;
+    }
+  }
+}

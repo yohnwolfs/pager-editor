@@ -1,0 +1,98 @@
+@import '../../variable.less';
+
+.dataSourcePanel {
+  // min-height: 300px;
+  .header {
+    border-bottom: 1px solid @border-color;
+    padding: 8px 16px;
+  }
+  .content {
+    display: flex;
+  }
+  .list {
+    padding: 8px;
+    width: 260px;
+    height: 100%;
+  }
+  .listIcon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4db8ff;
+    border-radius: 4px;
+    color: #fff;
+    margin-right: 8px;
+  }
+  .listItem {
+    height: 50px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    p {
+      color: #aaa;
+    }
+    &:hover {
+      background-color: #fafafa;
+    }
+  }
+  .listInfo {
+    flex: 1;
+  }
+  .selectedListItem {
+    background-color: #09f;
+    color: #fff;
+    &:hover {
+      background-color: #09f;
+    }
+    p {
+      color: #fff;
+    }
+  }
+  .detail {
+    padding: 16px 24px;
+    min-height: 200px;
+    flex: 1;
+    border-left: 1px solid @border-color;
+  }
+  .detailHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      p {
+        color: #aaa;
+      }
+    }
+  }
+  .methodItem {
+    margin-bottom: 8px;
+  }
+  .methodHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    :global(.anticon) {
+      cursor: pointer;
+    }
+  }
+  .methodTitle {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .url {
+    background: #f1f1f1;
+    border-radius: 4px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 8px;
+  }
+}
