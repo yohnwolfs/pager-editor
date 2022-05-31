@@ -13,7 +13,7 @@ Pager is a visual designer for react project.
 
 Mainly divided into three parts: Pager Editor, Pager Market, Pager Server. This is the Editor Part.
 
-Technology stack is mainly React. Use backend api developed by nestjs.
+Technology stack is mainly React. Use backend api developed by Nestjs.
 
 ![DemoPart1](https://i.imgur.com/PGVA9O9.gif)
 
@@ -39,7 +39,7 @@ Technology stack is mainly React. Use backend api developed by nestjs.
 - [] Application Management
 - [] DataSource Management
 - [] Source Code Download
-- [] Custom script and styles applied to widget
+- [] Custom script and styles
 - [x] Widget Market
 - [] Script Market
 
@@ -48,7 +48,7 @@ Technology stack is mainly React. Use backend api developed by nestjs.
 Install dependencies,
 
 ```bash
-$ npm i
+$ yarn or npm i
 ```
 
 Start the dev server,
